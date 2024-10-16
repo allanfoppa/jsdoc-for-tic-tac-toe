@@ -1,0 +1,15 @@
+{
+  "plugins": ["plugins/markdown"],
+  "recurseDepth": 10,
+  "source": {
+    "includePattern": ".+\\.js(doc|x)?$",
+    "include": [".", "README.md"],
+    "exclude": ["node_modules", "custom-template"]
+  },
+  "opts": {
+    "template": "./custom-template",
+    "destination": "./docs/",
+    "tutorials": "./tutorials",
+    "recurse": true
+  }
+}
